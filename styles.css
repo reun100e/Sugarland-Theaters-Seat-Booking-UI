@@ -1,0 +1,108 @@
+/* General Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+  background-color: #ccc;
+  height: 50px;
+  margin: 10px auto;
+  width: 80%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 50px;
+}
+
+/* Seat Layout */
+.seat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  background-color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.seat.available {
+  background-color: #4caf50;
+}
+
+.seat.occupied {
+  background-color: #e74c3c;
+  cursor: not-allowed;
+}
+
+.seat.selected {
+  background-color: #f1c40f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .seat {
+    width: 30px;
+    height: 30px;
+  }
+
+  .screen {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .seat {
+    width: 25px;
+    height: 25px;
+  }
+
+  .screen {
+    width: 100%;
+  }
+}
+
+/* Button */
+.confirm-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s ease;
+}
+
+.confirm-btn:hover {
+  background-color: #2980b9;
+}
