@@ -4,31 +4,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sugarland Theater Seat Booking</title>
+    <title>Responsive Seat Booking</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="container">
         <h1>Sugarland Theater Seat Booking</h1>
+
+        <!-- Movie Selection -->
+        <div class="movie-container">
+            <label for="movie">Select Movie:</label>
+            <select id="movie">
+                <option value="10">Movie 1 ($10)</option>
+                <option value="12">Movie 2 ($12)</option>
+                <option value="8">Movie 3 ($8)</option>
+            </select>
+        </div>
+
         <div class="screen">Screen</div>
-        <div class="seat-container">
-            <!-- Seats grid -->
-            <div class="row">
+
+        <div class="seat-container" id="seat-container">
+            <!-- Seats grid with prices -->
+            <div class="row" data-price="15">
                 <div class="seat available"></div>
                 <div class="seat available"></div>
                 <div class="seat occupied"></div>
                 <div class="seat available"></div>
                 <div class="seat available"></div>
             </div>
-            <div class="row">
+            <div class="row" data-price="12">
                 <div class="seat occupied"></div>
                 <div class="seat available"></div>
                 <div class="seat available"></div>
                 <div class="seat available"></div>
                 <div class="seat occupied"></div>
             </div>
-            <div class="row">
+            <div class="row" data-price="10">
                 <div class="seat available"></div>
                 <div class="seat available"></div>
                 <div class="seat available"></div>
@@ -37,7 +49,8 @@
             </div>
             <!-- Additional rows added here as needed -->
         </div>
-        <button id="confirm-selection" class="confirm-btn">Confirm Selection</button>
+
+        <button id="confirm-selection" class="confirm-btn">Total: $0 - Confirm Selection</button>
     </div>
 
     <script src="script.js"></script>
