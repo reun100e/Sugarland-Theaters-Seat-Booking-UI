@@ -14,3 +14,14 @@ This project is my submission for "Create a responsive seat selector UI in HTML,
 - **Dynamic Button Update:** The confirmation button dynamically shows the total cost of selected seats, providing immediate feedback to the user.
 - **Total Price Calculation:** The total cost is updated as users select or deselect seats. This includes the price for each selected seat, combined with the movie ticket price.
 - **Confirmation:** A simple confirmation message shows the number of selected seats and total price.
+
+## Preview:
+Desktop view:
+![image](https://github.com/user-attachments/assets/5b80b5bc-6dc5-4b97-83bf-b209b4e59cc2)
+
+Mobile view:
+![image](https://github.com/user-attachments/assets/9843cf03-22f4-4946-ba55-18a46406b824)
+
+# Contact
+Dr. Aghosh B Prasad <br>
+aghoshbprasad100@gmail.com
