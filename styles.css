@@ -11,6 +11,13 @@ h1 {
   color: #333;
 }
 
+h2 {
+  font-size: small;
+  text-align: left;
+  color: #4b4a4a;
+  border-bottom: solid rgb(96, 96, 96) 1px;
+}
+
 .container {
   max-width: 900px;
   margin: 0 auto;
@@ -52,11 +59,18 @@ h1 {
 .seat {
   width: 40px;
   height: 40px;
-  margin: 5px;
+  margin: 3px;
   background-color: #444;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.2s ease;
+}
+
+.seat:nth-of-type(4) {
+  margin-right: 20px;
+}
+.seat:nth-last-of-type(4) {
+  margin-left: 20px;
 }
 
 .seat.available {
@@ -95,7 +109,7 @@ h1 {
   }
 
   .seat-container {
-    zoom: 1.5; /* Zoom effect for mobile */
+    zoom: 0.6; /* Zoom out for mobile */
   }
 }
 
